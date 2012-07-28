@@ -19,6 +19,14 @@
 {{license.title}}
 {% endblock %}
 
+{% block dfsg_class %}
+    {% if license.status.dfsg %}
+        dfsg-free
+    {% else %}
+        dfsg-nonfree
+    {% endif %}
+{% endblock %}
+
 {% block main %}
 <h1>{{license.slug}}</h1>
 

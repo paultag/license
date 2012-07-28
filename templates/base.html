@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/dewebstrap.css') }}"/>
-        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/organized.css') }}"/>
+        <link type = "text/css"
+              rel  = "stylesheet"
+              href = "{{ url_for('static', filename='css/dewebstrap.css') }}"
+        />
+        <link type = "text/css"
+              rel  = "stylesheet"
+              href = "{{ url_for('static', filename='css/license.css') }}"
+        />
         <title>{% block title %}{% endblock %}</title>
         <style>
-            {% block css %}
-            {% endblock %}
+{% block css %}
+{% endblock %}
         </style>
-        {% block js %}
-        {% endblock %}
+{% block js %}
+{% endblock %}
     </head>
     <body>
-        <div class = 'heading' >
+        <div class = 'heading{% block dfsg_class %}{% endblock %}' >
             <div class = 'pad content' >
-                {% block logo %}
-                {% endblock %}
+{% block logo %}
+{% endblock %}
                 <div class = 'slug' >
 {% block slug %}
 {% endblock %}
