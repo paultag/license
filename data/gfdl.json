@@ -1,0 +1,14 @@
+{
+    "copyleft": false,
+    "excuses": {},
+    "name": "GFDL",
+    "packages": [],
+    "slug": "gfdl",
+    "status": {
+        "dfsg": false,
+        "fsf": true,
+        "gpl-compat": false,
+        "osi": true
+    },
+    "title": "GNU Free Documentation License"
+}

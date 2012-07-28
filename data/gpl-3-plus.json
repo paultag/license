@@ -1,0 +1,15 @@
+{
+    "copyleft": true,
+    "excuses": {},
+    "name": "GPLv3+",
+    "packages": [
+    ],
+    "slug": "gpl-3-plus",
+    "status": {
+        "dfsg": true,
+        "fsf": true,
+        "gpl-compat": true,
+        "osi": true
+    },
+    "title": "GNU General Public License version 3 (or later)"
+}
