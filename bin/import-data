@@ -11,14 +11,14 @@ def get_things(folder):
 
 for guy in get_things(sys.argv[1]):
     guy['_id'] = guy['slug']
-    try:
-        guy['dissent'] = open("%s/../%s/%s" % (
-            sys.argv[1],
-            "dissents",
-            guy['slug']
-        )).read()
-    except IOError:
-        pass
+    # try:
+    #     guy['dissent'] = open("%s/../%s/%s" % (
+    #         sys.argv[1],
+    #         "dissents",
+    #         guy['slug']
+    #     )).read()
+    # except IOError:
+    #     pass
     db.licenses.update({"_id": guy['slug']},
                        guy,
                        True,  # upsert
