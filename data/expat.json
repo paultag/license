@@ -1,0 +1,11 @@
+{
+    "name": "Expat",
+    "packages": [
+        "fluxbox"
+    ],
+    "slug": "expat",
+    "status": {
+        "dfsg": true
+    },
+    "title": "Expat (MIT-Like)"
+}
