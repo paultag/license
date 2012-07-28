@@ -23,7 +23,6 @@ def license(license=None):
     return render_template('license.html', **{
         "license": lobj,
         "info": {
-            "copyleft": "Copyleft",
             "dfsg": "DFSG Free",
             "fsf": "FSF Free",
             "gpl-compat": "GPL compatible",

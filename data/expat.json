@@ -1,14 +1,12 @@
 {
-    "excuses": {
-        "copyleft": "Does not enforce redistributing source"
-    },
+    "copyleft": false,
+    "excuses": {},
     "name": "Expat",
     "packages": [
         "fluxbox"
     ],
     "slug": "expat",
     "status": {
-        "copyleft": false,
         "dfsg": true,
         "fsf": true,
         "gpl-compat": true,
