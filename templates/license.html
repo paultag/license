@@ -20,10 +20,38 @@ This license is in the following packages:
 {% for package in license.packages %}
     <li><a
         href = 'http://packages.qa.debian.org/common/index.html?src={{package}}'
-    >pts:{{package}}</a></li>
+    >{{package}}</a></li>
 {% endfor %}
 </ul>
 
 <h2>Compat-matrix</h2>
+
+<table>
+{% for inf in info %}
+    <tr>
+        <td>{{ info[inf] }}</td>
+        <td>
+    {% if inf in license.status %}
+        {% if license.status[inf] %}
+            <img
+                src = '{{ url_for('static', filename='imgs/good.png') }}'
+                alt = '✓'
+            />
+        {% else %}
+            <img
+                src = '{{ url_for('static', filename='imgs/bad.png') }}'
+                alt = 'x'
+            />
+        {% endif %}
+    {% else %}
+        <img
+            src = '{{ url_for('static', filename='imgs/unknown.png') }}'
+            alt = 'x'
+        />
+    {% endif %}
+{% endfor %}
+        </td>
+    </tr>
+</table>
 
 {% endblock %}

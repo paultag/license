@@ -21,7 +21,14 @@ def license(license=None):
         return redirect(url_for('index'))
 
     return render_template('license.html', **{
-        "license": lobj
+        "license": lobj,
+        "info": {
+            "copyleft": "Copyleft",
+            "dfsg": "DFSG Free",
+            "fsf": "FSF Free",
+            "gpl-compat": "GPL compatible",
+            "osi": "OSI certified"
+        }
     })
 
 
