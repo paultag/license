@@ -1,0 +1,15 @@
+{
+    "name": "Expat",
+    "packages": [
+        "fluxbox"
+    ],
+    "slug": "expat",
+    "status": {
+        "copyleft": true,
+        "dfsg": true,
+        "fsf": true,
+        "gpl-compat": true,
+        "osi": true
+    },
+    "title": "Expat (MIT-Like)"
+}
