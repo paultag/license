@@ -1,4 +1,7 @@
 {
+    "excuses": {
+        "copyleft": "Does not enforce redistributing source"
+    },
     "name": "Expat",
     "packages": [
         "fluxbox"

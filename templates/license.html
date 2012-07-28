@@ -37,17 +37,25 @@ This license is in the following packages:
                 src = '{{ url_for('static', filename='imgs/good.png') }}'
                 alt = '✓'
             />
+        </td>
+        <td>
         {% else %}
             <img
                 src = '{{ url_for('static', filename='imgs/bad.png') }}'
                 alt = 'x'
             />
+        </td>
+        <td>
+            {{license.excuses[inf]}}
         {% endif %}
     {% else %}
-        <img
-            src = '{{ url_for('static', filename='imgs/unknown.png') }}'
-            alt = 'x'
-        />
+            <img
+                src = '{{ url_for('static', filename='imgs/unknown.png') }}'
+                alt = 'x'
+            />
+        </td>
+        <td>
+            {{license.excuses[inf]}}
     {% endif %}
 {% endfor %}
         </td>
