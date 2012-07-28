@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}QWERTY{% endblock %}
+{% block title %}{{license.title}}{% endblock %}
 
 {% block slug %}
-debian license db
+{{license.title}}
 {% endblock %}
 
 {% block main %}
-<h1>Debian License DB</h1>
-<h2>About</h2>
-Check out some popular licenses like <a href = '/license/expat' >expat</a> :)
+<h1>{{license.slug}}</h1>
+<h2>{{license.title}}</h2>
+Foobarbaz
 {% endblock %}
