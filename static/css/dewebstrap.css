@@ -4,7 +4,7 @@ h2{font-size:1.3em;}
 h3{font-size:1.1em;}
 .heading{background-color:#3e3e3e;color:#ececec;min-height:120px;}
 .pad{padding:20px 70px;}
-.content{width:800px;margin-left:auto;margin-right:auto;}
+.content{width:1000px;margin-left:auto;margin-right:auto;}
 #logo{height:80px;float:left;}
 .slug{float:left;height:80px;line-height:80px;vertical-align:middle;margin-left:30px;text-transform:uppercase;font-weight:bold;}
 .nav{height:80px;line-height:80px;float:right;vertical-align:middle;}.nav ul{text-transform:uppercase;font-size:1em;letter-spacing:0.03em;font-weight:bold;padding:0px;margin:0px;}.nav ul li{padding:0px;margin:0px;list-style:none;display:inline;padding-left:15px;}.nav ul li a{color:#a0a0a0;text-decoration:none;}
