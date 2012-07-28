@@ -1,6 +1,9 @@
 {
     "copyleft": true,
-    "excuses": {},
+    "excuses": {
+        "dfsg": "Not DFSG free due to invariant",
+        "gpl-compat": "Not GPL compatable in either direction"
+    },
     "name": "GFDL",
     "packages": [],
     "slug": "gfdl",
