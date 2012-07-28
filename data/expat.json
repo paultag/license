@@ -5,7 +5,11 @@
     ],
     "slug": "expat",
     "status": {
-        "dfsg": true
+        "dfsg": true,
+        "copyleft": true,
+        "fsf": true,
+        "osi": true,
+        "gpl-compat": true
     },
     "title": "Expat (MIT-Like)"
 }

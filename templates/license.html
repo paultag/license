@@ -8,6 +8,11 @@
 
 {% block main %}
 <h1>{{license.slug}}</h1>
-<h2>{{license.title}}</h2>
-Foobarbaz
+
+<h2>Debian Packages with this License</h2>
+{% for package in license.packages %}
+    <a
+        href = 'http://packages.qa.debian.org/common/index.html?src={{package}}'
+    >pts:{{package}}</a>
+{% endfor %}
 {% endblock %}
