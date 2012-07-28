@@ -7,4 +7,4 @@ help:
 	@echo ""
 
 import:
-	./bin/import-data ./data/
+	./bin/import-data ./data/licenses

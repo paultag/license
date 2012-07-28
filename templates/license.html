@@ -83,4 +83,9 @@ This license is in the following packages:
     </tr>
 </table>
 
+{% if license.dissent %}
+    <h2>Dissenting opinion</h2>
+    <pre>{{license.dissent}}</pre>
+{% endif %}
+
 {% endblock %}
