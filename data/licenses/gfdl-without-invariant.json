@@ -1,0 +1,16 @@
+{
+    "copyleft": true,
+    "excuses": {
+        "gpl-compat": "Not GPL compatable in either direction"
+    },
+    "name": "GFDL (without invariant)",
+    "packages": [],
+    "slug": "gfdl-without-invariant",
+    "status": {
+        "dfsg": true,
+        "fsf": true,
+        "gpl-compat": false,
+        "osi": true
+    },
+    "title": "GNU Free Documentation License (without invariant)"
+}
