@@ -48,9 +48,11 @@ if it's been accepted by the <a href = 'http://ftp-master.debian.org/'
 
 some more information on this issue:
 
+<ul>
 {% for citation in license.citations %}
-    <a href = '{{citation}}' >{{citation}}</a>
+    <li><a href = '{{citation}}' >{{citation}}</a></li>
 {% endfor %}
+</ul>
 
 <h2>Compat-matrix</h2>
 
