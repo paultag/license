@@ -1,12 +1,12 @@
 {
+    "citations": [
+        "http://www.debian.org/vote/2006/vote_001#outcome"
+    ],
     "copyleft": true,
     "excuses": {
         "dfsg": "Not DFSG free due to invariant",
         "gpl-compat": "Not GPL compatable in either direction"
     },
-    "citations": [
-        "http://www.debian.org/vote/2006/vote_001"
-    ],
     "name": "GFDL",
     "packages": [],
     "slug": "gfdl",
