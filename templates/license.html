@@ -34,16 +34,23 @@
 It's important to decide if a license is <i>truely</i> DFSG free by looking
 if it's been accepted by the <a href = 'http://ftp-master.debian.org/'
     >ftp-master</a>. Otherwise, everything else is just a guess.<br />
-<br />
-This license is in the following packages:
 
-<ul>
-{% for package in license.packages %}
-    <li><a
-        href = 'http://packages.qa.debian.org/common/index.html?src={{package}}'
-    >{{package}}</a></li>
+{% if license.status.dfsg %}
+    This license is in the following packages:
+    <ul>
+    {% for package in license.packages %}
+        <li><a
+            href = 'http://packages.qa.debian.org/common/index.html?src={{package}}'
+        >{{package}}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+some more information on this issue:
+
+{% for citation in license.citations %}
+    <a href = '{{citation}}' >{{citation}}</a>
 {% endfor %}
-</ul>
 
 <h2>Compat-matrix</h2>
 
