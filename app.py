@@ -31,6 +31,15 @@ def license(license=None):
     })
 
 
+@app.route("/list/")
+def list():
+    spec = {}
+    licenses = db.licenses.find(spec)
+    return render_template('list.html', **{
+        'licenses': licenses
+    })
+
+
 if __name__ == "__main__":
     app.debug = True
     app.run()

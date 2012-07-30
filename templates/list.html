@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Licenses{% endblock %}
+
+{% block slug %}
+License List
+{% endblock %}
+
+{% block main %}
+<table>
+{% for license in licenses %}
+    <tr>
+        <td>{{license.name}}</td>
+        <td>{{license.status.dfsg}}</td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}
