@@ -7,7 +7,6 @@
         "dfsg": "Not DFSG free due to invariant",
         "gpl-compat": "Not GPL compatable in either direction"
     },
-    "type": "license",
     "name": "GFDL",
     "packages": [],
     "slug": "gfdl",
@@ -17,5 +16,7 @@
         "gpl-compat": false,
         "osi": true
     },
-    "title": "GNU Free Documentation License"
+    "title": "GNU Free Documentation License",
+    "type": "license",
+    "dep5": "GFDL"
 }

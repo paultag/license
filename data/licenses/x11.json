@@ -2,8 +2,7 @@
     "copyleft": false,
     "excuses": {},
     "name": "MIT/X Consortium",
-    "packages": [
-    ],
+    "packages": [],
     "slug": "x11",
     "status": {
         "dfsg": true,

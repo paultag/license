@@ -6,7 +6,6 @@
     "excuses": {
         "gpl-compat": "Not GPL compatable in either direction"
     },
-    "type": "license",
     "name": "GFDL (without invariant)",
     "packages": [],
     "slug": "gfdl-without-invariant",
@@ -16,5 +15,7 @@
         "gpl-compat": false,
         "osi": true
     },
-    "title": "GNU Free Documentation License (without invariant)"
+    "title": "GNU Free Documentation License (without invariant)",
+    "type": "license",
+    "dep5": "GFDL-NIV"
 }

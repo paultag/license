@@ -13,5 +13,6 @@
         "osi": true
     },
     "title": "Expat (MIT-Like)",
-    "type": "license"
+    "type": "license",
+    "dep5": "Expat"
 }

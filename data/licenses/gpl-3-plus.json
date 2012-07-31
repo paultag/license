@@ -4,12 +4,13 @@
     "name": "GPLv3+",
     "packages": [],
     "slug": "gpl-3-plus",
-    "type": "license",
     "status": {
         "dfsg": true,
         "fsf": true,
         "gpl-compat": true,
         "osi": true
     },
-    "title": "GNU General Public License version 3 (or later)"
+    "title": "GNU General Public License version 3 (or later)",
+    "type": "license",
+    "dep5": "GPL"
 }
