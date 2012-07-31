@@ -1,0 +1,16 @@
+{
+    "copyleft": false,
+    "excuses": {},
+    "name": "XFree86",
+    "packages": [
+    ],
+    "slug": "xfree-86",
+    "status": {
+        "dfsg": true,
+        "fsf": true,
+        "gpl-compat": true,
+        "osi": true
+    },
+    "title": "XFree86 (MIT-Like)",
+    "type": "license"
+}

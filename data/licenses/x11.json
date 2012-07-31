@@ -1,0 +1,16 @@
+{
+    "copyleft": false,
+    "excuses": {},
+    "name": "MIT/X Consortium",
+    "packages": [
+    ],
+    "slug": "x11",
+    "status": {
+        "dfsg": true,
+        "fsf": true,
+        "gpl-compat": true,
+        "osi": true
+    },
+    "title": "MIT/X Consortium (MIT-Like)",
+    "type": "license"
+}
