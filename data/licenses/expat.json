@@ -1,5 +1,6 @@
 {
     "copyleft": false,
+    "dep5": "Expat",
     "excuses": {},
     "name": "Expat",
     "packages": [
@@ -13,6 +14,5 @@
         "osi": true
     },
     "title": "Expat (MIT-Like)",
-    "type": "license",
-    "dep5": "Expat"
+    "type": "license"
 }

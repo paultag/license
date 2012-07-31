@@ -4,6 +4,7 @@
 
 from flask import Flask, render_template, request, url_for, redirect
 from licenses.db import db
+from licenses import create_description
 
 
 app = Flask(__name__)
@@ -29,7 +30,8 @@ def license(license=None):
                 "fsf": "FSF Free",
                 "gpl-compat": "GPL compatible",
                 "osi": "OSI certified"
-            }
+            },
+            "descr": create_description(lobj)
         })
     elif lobj['type'] == 'disambiguation':
         return render_template('disambiguation.html', **{

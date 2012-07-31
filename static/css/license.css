@@ -13,3 +13,8 @@ pre.sane {
     white-space:      -o-pre-wrap;
     word-wrap:        break-word;
 }
+
+table.infopage {
+    float:            right;
+    width:            200px;
+}

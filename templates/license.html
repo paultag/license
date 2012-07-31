@@ -28,40 +28,8 @@
 {% endblock %}
 
 {% block main %}
-<h1>{{license.slug}}</h1>
 
-<h2>Debian Packages with this License</h2>
-It's important to decide if a license is <i>truely</i> DFSG free by looking
-if it's been accepted by the <a href = 'http://ftp-master.debian.org/'
-    >ftp-master</a>. Otherwise, everything else is just a guess.<br />
-
-{% if license.status.dfsg %}
-    This license is in the following packages:
-    <ul>
-    {% for package in license.packages %}
-        <li><a
-            href = 'http://packages.qa.debian.org/common/index.html?src={{package}}'
-        >{{package}}</a></li>
-    {% endfor %}
-    </ul>
-{% endif %}
-{% if license.dep5 %}
-DEP5 short-id: {{license.dep5}}
-<br />
-<br />
-{% endif %}
-
-some more information on this issue:
-
-<ul>
-{% for citation in license.citations %}
-    <li><a href = '{{citation}}' >{{citation}}</a></li>
-{% endfor %}
-</ul>
-
-<h2>Compat-matrix</h2>
-
-<table>
+<table class = 'infopage' >
 {% for inf in info %}
     <tr>
         <td>{{ info[inf] }}</td>
@@ -92,10 +60,34 @@ some more information on this issue:
         <td>
             {{license.excuses[inf]}}
     {% endif %}
-{% endfor %}
         </td>
     </tr>
+{% endfor %}
+    <tr>
+        <td>FTP-Approved</td>
+        <td>{% if license.packages != [] %}
+            <img
+                src = '{{ url_for('static', filename='imgs/good.png') }}'
+                alt = 'x'
+            />
+        {% else %}
+            <img
+                src = '{{ url_for('static', filename='imgs/bad.png') }}'
+                alt = 'x'
+            />
+        {% endif %}</td>
+    </tr>
 </table>
+
+<h2>{{license.name}}</h2>
+
+{{descr}}
+
+<ul>
+{% for citation in license.citations %}
+    <li><a href = '{{citation}}' >{{citation}}</a></li>
+{% endfor %}
+</ul>
 
 {% if license.dissent %}
     <h2>Dissenting opinion</h2>
