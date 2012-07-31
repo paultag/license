@@ -1,5 +1,13 @@
 {
     "name": "GPL",
+    "related": [
+        "gpl-1",
+        "gpl-1-plus",
+        "gpl-2",
+        "gpl-2-plus",
+        "gpl-3",
+        "gpl-3-plus"
+    ],
     "slug": "gpl",
     "status": {},
     "title": "GPL (General Public License)",

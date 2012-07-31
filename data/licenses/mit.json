@@ -1,12 +1,12 @@
 {
     "name": "MIT",
-    "slug": "mit",
-    "status": {},
-    "title": "\"MIT\" License",
-    "type": "disambiguation",
     "related": [
         "x11",
         "xfree-86",
         "expat"
-    ]
+    ],
+    "slug": "mit",
+    "status": {},
+    "title": "\"MIT\" License",
+    "type": "disambiguation"
 }
