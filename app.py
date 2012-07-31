@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    return redirect(url_for('list'))
     return render_template('index.html', **{})
 
 
