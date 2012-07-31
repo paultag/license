@@ -12,5 +12,6 @@
         "gpl-compat": true,
         "osi": true
     },
-    "title": "Expat (MIT-Like)"
+    "title": "Expat (MIT-Like)",
+    "type": "license"
 }

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{license.title}}{% endblock %}
+
+{% block slug %}
+{{license.title}}
+{% endblock %}
+
+{% block main %}
+<h1>{{license.title}}</h1>
+<h2>License Disambiguation</h2>
+{{license.disambiguation|safe}}
+{% endblock %}

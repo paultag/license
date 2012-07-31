@@ -2,9 +2,9 @@
     "copyleft": true,
     "excuses": {},
     "name": "GPLv3",
-    "packages": [
-    ],
+    "packages": [],
     "slug": "gpl-3",
+    "type": "license",
     "status": {
         "dfsg": true,
         "fsf": true,

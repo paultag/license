@@ -19,6 +19,12 @@ for guy in get_things(sys.argv[1]):
     #     )).read()
     # except IOError:
     #     pass
+    if guy['type'] == 'disambiguation':
+        guy['disambiguation'] = open("%s/../%s/%s" % (
+            sys.argv[1],
+            "disambiguation",
+            guy['slug']
+        )).read()
     db.licenses.update({"_id": guy['slug']},
                        guy,
                        True,  # upsert

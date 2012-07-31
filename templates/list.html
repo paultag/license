@@ -11,10 +11,14 @@ License List
 {% for license in licenses %}
     <tr>
         <td><a href = '/license/{{license._id}}/' >{{license.name}}</a></td>
-        {% if license.status.dfsg %}
-        <td>DFSG Free</td>
+        {% if "dfsg" in license.status %}
+            {% if license.status.dfsg %}
+            <td>DFSG Free</td>
+            {% else %}
+            <td>non-free</td>
+            {% endif %}
         {% else %}
-        <td>non-free</td>
+            <td>disambiguation</td>
         {% endif %}
     </tr>
 {% endfor %}

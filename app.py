@@ -21,15 +21,22 @@ def license(license=None):
     if lobj is None:
         return redirect(url_for('index'))
 
-    return render_template('license.html', **{
-        "license": lobj,
-        "info": {
-            "dfsg": "DFSG Free",
-            "fsf": "FSF Free",
-            "gpl-compat": "GPL compatible",
-            "osi": "OSI certified"
-        }
-    })
+    if lobj['type'] == 'license':
+        return render_template('license.html', **{
+            "license": lobj,
+            "info": {
+                "dfsg": "DFSG Free",
+                "fsf": "FSF Free",
+                "gpl-compat": "GPL compatible",
+                "osi": "OSI certified"
+            }
+        })
+    elif lobj['type'] == 'disambiguation':
+        return render_template('disambiguation.html', **{
+            "license": lobj
+        })
+
+    return redirect(url_for('index'))
 
 
 @app.route("/list/")
