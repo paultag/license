@@ -3,5 +3,10 @@
     "slug": "mit",
     "status": {},
     "title": "\"MIT\" License",
-    "type": "disambiguation"
+    "type": "disambiguation",
+    "related": [
+        "x11",
+        "xfree-86",
+        "expat"
+    ]
 }

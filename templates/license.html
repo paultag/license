@@ -81,7 +81,15 @@
 
 <h2>{{license.name}}</h2>
 
-{{descr}}
+{{descr}}<br />
+<br />
+<h2>Related Licenses</h2>
+
+{% for parent in parents %}
+    {% for l in parent.related %}
+        <a href = '/license/{{l}}' >{{l}}</a>
+    {% endfor %}
+{% endfor %}
 
 <ul>
 {% for citation in license.citations %}

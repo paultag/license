@@ -23,6 +23,9 @@ def license(license=None):
         return redirect(url_for('index'))
 
     if lobj['type'] == 'license':
+        parents = db.licenses.find({
+            "related": lobj['_id']
+        })
         return render_template('license.html', **{
             "license": lobj,
             "info": {
@@ -31,6 +34,7 @@ def license(license=None):
                 "gpl-compat": "GPL compatible",
                 "osi": "OSI certified"
             },
+            "parents": parents,
             "descr": create_description(lobj)
         })
     elif lobj['type'] == 'disambiguation':
