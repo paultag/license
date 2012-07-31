@@ -21,6 +21,12 @@
         <div class = 'heading{% block dfsg_class %}{% endblock %}' >
             <div class = 'pad content' >
 {% block logo %}
+<div class = 'logo' >
+    <img id = 'logo'
+        src = '{{ url_for('static', filename='imgs/debian-red.png') }}'
+        alt = ''
+    />
+</div>
 {% endblock %}
                 <div class = 'slug' >
 {% block slug %}

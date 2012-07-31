@@ -1,5 +1,6 @@
 {
     "copyleft": true,
+    "dep5": "GPL",
     "excuses": {},
     "name": "GPLv3",
     "packages": [],
@@ -11,6 +12,5 @@
         "osi": true
     },
     "title": "GNU General Public License version 3",
-    "type": "license",
-    "dep5": "GPL"
+    "type": "license"
 }
